@@ -1,0 +1,11 @@
+提交顺序：git add,git commit -m "注释",git push -u origin master
+git status
+git log
+git log --pretty=oneline
+版本回退：git reset --hard HEAD^	回退到上一个版本
+git reset --hard HEAD~100		回退到前100个版本
+git reflog	查看每次提交的版本ID
+git reset --hard + 版本号
+撤销修改（未add）：git checkout -- file
+撤销修改（add后未commit):git reset HEAD + file后再git checkout -- file
+add后且已commit想要撤销修改只能使用版本回退:git reset --hard HEAD^
